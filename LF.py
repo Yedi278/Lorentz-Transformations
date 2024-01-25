@@ -15,6 +15,9 @@ class transf():
 
         return betha,gamma
 
-    def trasf(self,x,y,z,t):
-        x1 = (x - self.v*t)* self.gamma
-        t1 = self.gamma* (t - (self.v*x/c**2))
+    def trasf(self,x,t):
+
+        x1 = (x - self.v*t) * self.gamma
+        t1 = self.gamma * (t - (self.v*x/c**2))
+
+        return x1,t1
